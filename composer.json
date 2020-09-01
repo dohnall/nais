@@ -4,7 +4,8 @@
     "description": "The NAIS project.",
     "license": "MIT",
     "require": {
-        "laravel/laravel": "*"
+        "laravel/laravel": "*",
+        "dohnall/nais": "*"
     },
     "require-dev": {
 
