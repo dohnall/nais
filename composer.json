@@ -40,7 +40,7 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
-        "post-package-install": [
+        "post-install-cmd": [
             "Dohnall\\Nais\\CopyFiles::postPackageInstall"
         ],
         "post-create-project-cmd": [
