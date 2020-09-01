@@ -34,7 +34,8 @@
     "prefer-stable": true,
     "scripts": {
         "post-create-project-cmd": [
-            "Dohnall\\CopyFiles\\CopyFiles::run"
+            "Dohnall\\CopyFiles\\CopyFiles::run",
+            "@composer install"
         ]
     }
 }
