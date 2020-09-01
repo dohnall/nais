@@ -2,15 +2,11 @@
 
 namespace Dohnall\Nais;
 
-use Composer\Script\Event;
-use Composer\Installer\PackageEvent;
-
 class CopyFiles
 {
-    public static function run(PackageEvent $event)
+    public static function run()
     {
         echo 'running...<br>';
-        $installedPackage = $event->getOperation()->getPackage();
         $root = dirname(dirname(__FILE__));
         self::custom_copy($root.'/vendor/laravel/laravel', $root);
     }
