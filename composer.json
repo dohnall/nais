@@ -37,7 +37,7 @@
             "@php artisan package:discover --ansi"
         ],
         "post-install-cmd": [
-            "cp -r ./vendor/laravel/laravel ./"
+            "Xcopy c:\\wamp64\\www\\test\\nais-test\\vendor\\laravel\\laravel c:\\wamp64\\www\\test\\nais-test /E /I"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
