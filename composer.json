@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "laravel/laravel": "*",
-        "dohnall/nais": "*"
+        "dohnall/copy-files": "*"
     },
     "require-dev": {
 
@@ -34,7 +34,7 @@
     "prefer-stable": true,
     "scripts": {
         "post-create-project-cmd": [
-            "Dohnall\\Nais\\CopyFiles::run"
+            "Dohnall\\CopyFiles\\CopyFiles::run"
         ]
     }
 }
