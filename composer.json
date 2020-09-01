@@ -47,6 +47,7 @@
             "@php artisan key:generate --ansi",
             "@composer config repositories.vtech composer https://packages.victoriatech.cz/",
             "@composer require vtech/base",
+            "@composer remove laravel/laravel",
             "@composer update"
         ]
     }
