@@ -17,6 +17,9 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "installer-paths": {
+            "./": ["laravel/laravel"]
         }
     },
     "autoload": {
