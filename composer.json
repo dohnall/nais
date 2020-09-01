@@ -10,6 +10,12 @@
     "require-dev": {
 
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.victoriatech.cz/"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
@@ -39,7 +45,8 @@
             "@php artisan package:discover --ansi",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate --ansi",
-            "@composer update"
+            "@composer update",
+            "@composer require vtech/base"
         ]
     }
 }
