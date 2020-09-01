@@ -35,7 +35,11 @@
     "scripts": {
         "post-create-project-cmd": [
             "Dohnall\\CopyFiles\\CopyFiles::run",
-            "@composer install"
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate --ansi",
+            "@composer update"
         ]
     }
 }
