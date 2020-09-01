@@ -32,15 +32,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ],
         "post-install-cmd": [
-            "Xcopy c:\\wamp64\\www\\test\\nais-test\\vendor\\laravel\\laravel c:\\wamp64\\www\\test\\nais-test /E /I"
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "Dohnall\\Nais\\CopyFiles::run"
         ]
     }
 }

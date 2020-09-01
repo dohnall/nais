@@ -7,7 +7,7 @@ use Composer\Installer\PackageEvent;
 
 class CopyFiles
 {
-    public static function postPackageInstall(PackageEvent $event)
+    public static function run(PackageEvent $event)
     {
         echo 'running...<br>';
         $installedPackage = $event->getOperation()->getPackage();
@@ -25,7 +25,6 @@ class CopyFiles
 
         // Loop through the files in source directory
         while( $file = readdir($dir) ) {
-
             if (( $file != '.' ) && ( $file != '..' )) {
                 if ( is_dir($src . '/' . $file) )
                 {
