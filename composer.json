@@ -46,6 +46,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate --ansi",
             "@composer config repositories.repo-name vcs https://packages.victoriatech.cz/",
+            "@composer require vtech/base",
             "@composer update"
         ]
     }
